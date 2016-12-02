@@ -86,7 +86,7 @@ if isempty(AnalogEntityIDsSF)
 end
 
 % Find Electrode IDs and other info about selected channels
-AnalogElectrodeIDs  = [hFile.Entity(AnalogEntityIDsSF).ElectrodeID]
+AnalogElectrodeIDs  = [hFile.Entity(AnalogEntityIDsSF).ElectrodeID];
 
 % Unless channels are specified, read all channels
 if nargin < 2 || isempty(channels)
